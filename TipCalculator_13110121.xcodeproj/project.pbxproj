@@ -15,6 +15,10 @@
 		595CC4651EE0549D00FDD9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595CC4631EE0549D00FDD9F2 /* LaunchScreen.storyboard */; };
 		595CC4701EE0549E00FDD9F2 /* TipCalculator_13110121Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595CC46F1EE0549E00FDD9F2 /* TipCalculator_13110121Tests.swift */; };
 		595CC47B1EE0549E00FDD9F2 /* TipCalculator_13110121UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595CC47A1EE0549E00FDD9F2 /* TipCalculator_13110121UITests.swift */; };
+		595CC4891EE0586400FDD9F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595CC4881EE0586400FDD9F2 /* MainViewController.swift */; };
+		595CC48B1EE063C000FDD9F2 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595CC48A1EE063C000FDD9F2 /* SettingTableViewController.swift */; };
+		5971A27B1EE0ADBE00BB07FF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5971A27A1EE0ADBE00BB07FF /* HistoryTableViewCell.swift */; };
+		5971A27D1EE0AF1500BB07FF /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5971A27C1EE0AF1500BB07FF /* HistoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		595CC4761EE0549E00FDD9F2 /* TipCalculator_13110121UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculator_13110121UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		595CC47A1EE0549E00FDD9F2 /* TipCalculator_13110121UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculator_13110121UITests.swift; sourceTree = "<group>"; };
 		595CC47C1EE0549E00FDD9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		595CC4881EE0586400FDD9F2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		595CC48A1EE063C000FDD9F2 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		5971A27A1EE0ADBE00BB07FF /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		5971A27C1EE0AF1500BB07FF /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,12 @@
 			children = (
 				595CC4571EE0549C00FDD9F2 /* AppDelegate.swift */,
 				595CC4591EE0549C00FDD9F2 /* ViewController.swift */,
-				595CC45B1EE0549C00FDD9F2 /* Main.storyboard */,
-				595CC4611EE0549D00FDD9F2 /* Assets.xcassets */,
+				5971A2801EE0B19C00BB07FF /* Model */,
+				5971A27E1EE0B17C00BB07FF /* View */,
+				5971A27F1EE0B19100BB07FF /* Controller */,
 				595CC4631EE0549D00FDD9F2 /* LaunchScreen.storyboard */,
+				595CC4611EE0549D00FDD9F2 /* Assets.xcassets */,
 				595CC4661EE0549D00FDD9F2 /* Info.plist */,
-				595CC45E1EE0549C00FDD9F2 /* TipCalculator_13110121.xcdatamodeld */,
 			);
 			path = TipCalculator_13110121;
 			sourceTree = "<group>";
@@ -126,6 +135,33 @@
 				595CC47C1EE0549E00FDD9F2 /* Info.plist */,
 			);
 			path = TipCalculator_13110121UITests;
+			sourceTree = "<group>";
+		};
+		5971A27E1EE0B17C00BB07FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5971A27A1EE0ADBE00BB07FF /* HistoryTableViewCell.swift */,
+				595CC45B1EE0549C00FDD9F2 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5971A27F1EE0B19100BB07FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5971A27C1EE0AF1500BB07FF /* HistoryTableViewController.swift */,
+				595CC48A1EE063C000FDD9F2 /* SettingTableViewController.swift */,
+				595CC4881EE0586400FDD9F2 /* MainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5971A2801EE0B19C00BB07FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				595CC45E1EE0549C00FDD9F2 /* TipCalculator_13110121.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5971A27B1EE0ADBE00BB07FF /* HistoryTableViewCell.swift in Sources */,
 				595CC45A1EE0549C00FDD9F2 /* ViewController.swift in Sources */,
 				595CC4601EE0549C00FDD9F2 /* TipCalculator_13110121.xcdatamodeld in Sources */,
 				595CC4581EE0549C00FDD9F2 /* AppDelegate.swift in Sources */,
+				5971A27D1EE0AF1500BB07FF /* HistoryTableViewController.swift in Sources */,
+				595CC4891EE0586400FDD9F2 /* MainViewController.swift in Sources */,
+				595CC48B1EE063C000FDD9F2 /* SettingTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +551,7 @@
 				595CC4811EE0549E00FDD9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		595CC4821EE0549E00FDD9F2 /* Build configuration list for PBXNativeTarget "TipCalculator_13110121Tests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +560,7 @@
 				595CC4841EE0549E00FDD9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		595CC4851EE0549E00FDD9F2 /* Build configuration list for PBXNativeTarget "TipCalculator_13110121UITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +569,7 @@
 				595CC4871EE0549E00FDD9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
